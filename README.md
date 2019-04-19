@@ -2,7 +2,7 @@
 Resources to learn more about R. This would supplement R Foundation and R Intermediate session taken at JCP
 
 
-## Things to do 
+## Things to do :pencil:
 
 - [ ] Add Resources to the Readme  
 - [ ] Revamp the Case Study for R Foundations
