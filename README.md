@@ -24,4 +24,4 @@ Resources to learn more about R. This would supplement R Foundation and R Interm
 
 ## **Assignments**
 
-1. **["The Analytics Edge"](https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/index.htm)** Course either on OCW or edx. Please check the assignments tab. They have provided the data for each assignment. You can readily check your answers on their website. 
+1. **"The Analytics Edge"** Course either on [OCW]((https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/index.htm)) or [edx](https://edx.org/course/the-analytics-edge). Please check the assignments tab. They have provided the data for each assignment. You can readily check your answers on their website. 
