@@ -1,19 +1,6 @@
 # JCP R Resources
 Resources to learn more about `R`. This would supplement R Foundation and R Intermediate session taken at JCP
 
-
-## Things to do :pencil:
-
-- [ ] Add Resources to the Readme  
-- [ ] Revamp the Case Study for R Foundations
-- [ ] Create the syllabus for Intermediate R
-- [ ] Create a case study for R Intermediate Session
-- [ ] Create a Github Page website for the users
-- [ ] Create an interactive test for entry to 'Intermediate R Session'
-  - [Website demo](https://laurencebradford.github.io/wp-quiz/)
-  - [Website Github](https://github.com/laurencebradford/wp-quiz)
-
-
 ## R Foundation Resources :bulb:
 
 ### Courses :computer:
@@ -30,6 +17,18 @@ Resources to learn more about `R`. This would supplement R Foundation and R Inte
 4. **[Hands-On Programming with R](https://rstudio-education.github.io/hopr/)**: This covers the programmatic aspects of the `R` language and would help you to be really clear with the basics. 
 
 
-## Assignments
+### Assignments :pencil:
 
 1. **The Analytics Edge** Course either on [OCW](https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/index.htm) or [edx](https://edx.org/course/the-analytics-edge). Please check the assignments tab. They have provided the data for each assignment. You can readily check your answers on their website. 
+
+
+#### Things to do :pencil: [for Instructors]
+
+- [ ] Add Resources to the Readme  
+- [ ] Revamp the Case Study for R Foundations
+- [ ] Create the syllabus for Intermediate R
+- [ ] Create a case study for R Intermediate Session
+- [ ] Create a Github Page website for the users
+- [ ] Create an interactive test for entry to 'Intermediate R Session'
+  - [Website demo](https://laurencebradford.github.io/wp-quiz/)
+  - [Website Github](https://github.com/laurencebradford/wp-quiz)
