@@ -1,9 +1,16 @@
 theme: jekyll-theme-minimal
-
 plugins:
   - jemoji
   
 logo: /img/jcpR_logo1.png
+ 
+
+# List of links in the navigation bar
+navbar-links:
+  General : 
+  R Foundations:
+  R Intermediate: 
+
  
 # Google Analytics ID to track website using GA
 google_analytics: UA-138730757-1
