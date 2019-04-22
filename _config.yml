@@ -3,5 +3,7 @@ theme: jekyll-theme-minimal
 plugins:
   - jemoji
   
-  # Fill in your Google Analytics ID to track your website using GA
+logo: /img/jcpR_logo.jpg
+ 
+# Google Analytics ID to track website using GA
 google_analytics: UA-138730757-1
