@@ -3,7 +3,7 @@ theme: jekyll-theme-minimal
 plugins:
   - jemoji
   
-logo: /img/jcpR_logo.jpg
+logo: /img/jcpR_logo.png
  
 # Google Analytics ID to track website using GA
 google_analytics: UA-138730757-1
