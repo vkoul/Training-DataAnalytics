@@ -40,7 +40,7 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 </details>
 
 ****
-### Tutorial :ledger:
+### Tutorials :ledger:
 <details>
   <summary>Click to expand!</summary>
     
@@ -71,17 +71,3 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 
 </details>
 
-#### Things to do :pencil: [for Instructors]
-<details>
-  <summary>Click to expand!</summary>
-
-- [x] Add Resources to the Readme  
-- [ ] Revamp the Case Study for R Foundations
-- [ ] Create the syllabus for Intermediate R
-- [ ] Create a case study for R Intermediate Session
-- [x] Create a Github Page website for the users
-- [ ] Create an interactive test for entry to 'Intermediate R Session'
-    - [Website demo](https://laurencebradford.github.io/wp-quiz/)
-    - [Website Github](https://github.com/laurencebradford/wp-quiz)
-
-</details>
