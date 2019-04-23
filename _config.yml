@@ -5,6 +5,7 @@ plugins:
   
 logo: /img/jcpR_logo1.png
  
+ markdown: CommonMarkGhPages
 
 # List of links in the navigation bar
 #navbar-links:
