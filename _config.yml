@@ -1,7 +1,7 @@
-remote_theme: mmistakes/minimal-mistakes
+theme: jekyll-theme-minimal
 
-#plugins:
- # - jemoji
+plugins:
+ - jemoji
   
 #logo: /img/jcpR_logo1.png
  
@@ -14,4 +14,4 @@ remote_theme: mmistakes/minimal-mistakes
 
  
 # Google Analytics ID to track website using GA
-#google_analytics: UA-138730757-1
+google_analytics: UA-138730757-1
