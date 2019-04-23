@@ -3,7 +3,7 @@ theme: jekyll-theme-minimal
 plugins:
  - jemoji
   
-#logo: /img/jcpR_logo1.png
+logo: /img/jcpR_logo1.png
  
 
 # List of links in the navigation bar
