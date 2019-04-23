@@ -12,7 +12,7 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 
 2. **[Data Science: R Basics](https://www.edx.org/course/r-basics-2)**: This is by Harvard and is a part of the 9 courses in [**Data Science Certificate**](https://www.edx.org/professional-certificate/harvardx-data-science). If you are interested in learning ML and Stats these are great courses. 
 
-3. [**Dataquest R Courses**](https://www.dataquest.io/path/data-analyst-r/): Dataquest is similar to [Datacamp](www.datacamp.com), you can learn R coding in an interactive manner. Check out their free courses
+3. **[Dataquest R Courses]**(https://www.dataquest.io/path/data-analyst-r/): Dataquest is similar to [Datacamp](www.datacamp.com), you can learn R coding in an interactive manner. Check out their free courses
     - [**Introduction to Programming in R**](https://www.dataquest.io/course/intro-to-r/)
     - [**Intermediate R Programming**](https://www.dataquest.io/course/intermediate-r-programming/)
     - [**Data Visualization in R**](https://www.dataquest.io/course/r-data-viz/)
