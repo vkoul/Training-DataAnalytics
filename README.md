@@ -60,7 +60,7 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 2. [**Why Use R? - R Tidyverse Reporting and Analytics for Excel Users**](https://www.youtube.com/watch?v=jn_3N_o2d6Q)
 
 </details>
-s
+
 ****
 ### Assignments :pencil:
 
