@@ -1,4 +1,4 @@
-# JCP R Resources
+# JCP R Resources - [Beta Version]
 Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI
 
 ## R Foundation Resources :bulb:
