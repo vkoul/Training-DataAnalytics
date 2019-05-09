@@ -3,6 +3,9 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 
 ## R Foundation Resources :bulb:
 ****
+
+### [R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)
+
 ### Courses :computer:
 
 <details>
