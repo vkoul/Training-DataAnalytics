@@ -20,11 +20,9 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
     - **[Intermediate R Programming](https://www.dataquest.io/course/intermediate-r-programming/)**
     - **[Data Visualization in R](https://www.dataquest.io/course/r-data-viz/)**
 
-4. **[Jumpstart with R](https://university.business-science.io/p/jumpstart-with-r)**: Get started on your data science journey with this free course. ***Complete a real-world Sales Analysis in R***. 
+4. **[Swirl: Learn R interactively within R Studio](https://swirlstats.com/students.html)**: The swirl R package makes it fun and easy to learn R programming and data science. If you are new to R, have no fear.
 
-5. **[Swirl: Learn R interactively within R Studio](https://swirlstats.com/students.html)**: The swirl R package makes it fun and easy to learn R programming and data science. If you are new to R, have no fear.
-
-6. **[R Bootcamp](https://www.datacamp.com/courses/rbootcamp)**: This is a short course covering the basics of [`ggplot`](https://ggplot2.tidyverse.org/), [`dplyr`](https://dplyr.tidyverse.org/), [`tidyr`](https://tidyr.tidyverse.org/) and `broom`.
+5. **[R Bootcamp](https://www.datacamp.com/courses/rbootcamp)**: This is a short course covering the basics of [`ggplot`](https://ggplot2.tidyverse.org/), [`dplyr`](https://dplyr.tidyverse.org/), [`tidyr`](https://tidyr.tidyverse.org/) and `broom`.
 
 </details>
 
