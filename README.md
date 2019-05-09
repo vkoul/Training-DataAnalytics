@@ -79,5 +79,8 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 
 1. **The Analytics Edge** course either on [OCW](https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/index.htm) or [edx](https://edx.org/course/the-analytics-edge). Please check the assignments tab. They have provided the data for each assignment. You can readily check your answers on their website. 
 
+  * Some of these assignments would expect you to know more than what was covered in class, so make extensive use of Google. This is a proper Masters level course taught at MIT in their Business Analytics program, so expect it to be challenging but you will definitely learn a lot if you are able to finish the assignments. 
+
+
 </details>
 
