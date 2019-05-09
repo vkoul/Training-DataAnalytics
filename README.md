@@ -43,8 +43,15 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 ### Tutorials :ledger:
 <details>
   <summary>Click to expand!</summary>
-    
-1. **[R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder/)** : An introduction to R for non-programmers using gapminder data
+ 
+1. **[R Programming](https://swcarpentry.github.io/r-novice-inflammation/)**
+
+2. **[R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder/)** : An introduction to R for non-programmers using gapminder data
+
+3. **[Data Analysis and Visualization in R](https://datacarpentry.org/R-ecology-lesson/index.html)**
+
+4. **[Data Wrangling with R](https://cengel.github.io/R-data-wrangling/)**
+
 
 </details>
 
@@ -58,6 +65,8 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 1. **[What is R?](https://www.youtube.com/watch?v=XcBLEVknqvY)** : A very good introductory video on R. 
 
 2. **[Why Use R? - R Tidyverse Reporting and Analytics for Excel Users](https://www.youtube.com/watch?v=jn_3N_o2d6Q)**
+
+3. **[Data Analysis Screencasts](https://www.youtube.com/watch?v=nx5yhXAQLxw&list=PLnH3UnphKJdvbQsOFoFcTrbn18I_NBvW3)** : [David Robinson](http://varianceexplained.org/) is a Data Scientest at Datacamp and does a weekly #TidyTuesday Screencast. You can do it along with him, very good exercise in Data Analysis using R. 
 
 </details>
 
