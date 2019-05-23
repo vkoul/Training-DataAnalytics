@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://garthtarr.github.io/meatR/dplyr_ex1.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta name="generator" content="pandoc">
+
+
+
+
+<title>Exercises for dplyr</title>
+
+<script src="./Exercises for dplyr_files/jquery.min.js.download"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./Exercises for dplyr_files/cosmo.min.css" rel="stylesheet">
+<script src="./Exercises for dplyr_files/bootstrap.min.js.download"></script>
+<script src="./Exercises for dplyr_files/html5shiv.min.js.download"></script>
+<script src="./Exercises for dplyr_files/respond.min.js.download"></script>
+<script src="./Exercises for dplyr_files/jquery-ui.min.js.download"></script>
+<link href="./Exercises for dplyr_files/jquery.tocify.css" rel="stylesheet">
+<script src="./Exercises for dplyr_files/jquery.tocify.js.download"></script>
+<script src="./Exercises for dplyr_files/tabsets.js.download"></script>
+<link href="./Exercises for dplyr_files/textmate.css" rel="stylesheet">
+<script src="./Exercises for dplyr_files/highlight.js.download"></script>
+<link href="./Exercises for dplyr_files/all.css" rel="stylesheet">
+<link href="./Exercises for dplyr_files/v4-shims.css" rel="stylesheet">
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="./Exercises for dplyr_files/font-awesome.css" type="text/css">
+<link rel="stylesheet" href="./Exercises for dplyr_files/lesson.scss" type="text/css">
+<link rel="stylesheet" href="./Exercises for dplyr_files/kbd.css" type="text/css">
+<link rel="stylesheet" href="./Exercises for dplyr_files/lesson(1).scss" type="text/css">
+
+
+
+<style type="text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+<script type="text/javascript" src="./Exercises for dplyr_files/MathJax.js.download"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+<ul id="tocify-header0" class="tocify-header list-group"><li class="tocify-item list-group-item active" data-unique="exercises">Exercises</li><ul class="tocify-subheader list-group" data-tag="3" style="display: block;"><li class="tocify-item list-group-item" data-unique="exercise_1">Exercise 1</li><li class="tocify-item list-group-item" data-unique="exercise_2">Exercise 2</li><li class="tocify-item list-group-item" data-unique="exercise_3" style="cursor: pointer;">Exercise 3</li><li class="tocify-item list-group-item" data-unique="exercise_4" style="cursor: pointer;">Exercise 4</li><li class="tocify-item list-group-item" data-unique="exercise_5" style="cursor: pointer;">Exercise 5</li><li class="tocify-item list-group-item" data-unique="exercise_6" style="cursor: pointer;">Exercise 6</li><li class="tocify-item list-group-item" data-unique="exercise_7" style="cursor: pointer;">Exercise 7</li><li class="tocify-item list-group-item" data-unique="exercise_8" style="cursor: pointer;">Exercise 8</li><li class="tocify-item list-group-item" data-unique="exercise_9" style="cursor: pointer;">Exercise 9</li><li class="tocify-item list-group-item" data-unique="exercise_10" style="cursor: pointer;">Exercise 10</li></ul></ul><ul id="tocify-header1" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="solutions" style="cursor: pointer;">Solutions</li><ul class="tocify-subheader list-group" data-tag="3" style="display: none;"><li class="tocify-item list-group-item" data-unique="exercise_113">Exercise 1</li><li class="tocify-item list-group-item" data-unique="exercise_214">Exercise 2</li><li class="tocify-item list-group-item" data-unique="exercise_315">Exercise 3</li><li class="tocify-item list-group-item" data-unique="exercise_416">Exercise 4</li><li class="tocify-item list-group-item" data-unique="exercise_517">Exercise 5</li><li class="tocify-item list-group-item" data-unique="exercise_618">Exercise 6</li><li class="tocify-item list-group-item" data-unique="exercise_719">Exercise 7</li><li class="tocify-item list-group-item" data-unique="exercise_820">Exercise 8</li><li class="tocify-item list-group-item" data-unique="exercise_921">Exercise 9</li><li class="tocify-item list-group-item" data-unique="exercise_1022">Exercise 10</li></ul></ul></div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://garthtarr.github.io/meatR/index.html">Analytics for industRy</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://garthtarr.github.io/meatR/index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="https://garthtarr.github.io/meatR/about.html">
+    <span class="fa fa-info-circle"></span>
+     
+    About
+  </a>
+</li>
+<li>
+  <a href="https://docs.google.com/document/d/1kxQxIUDBRyF3afJsKyCYcH7hOlm_GaNxuq_w6UEC1pM/edit?usp=sharing">
+    <span class="fa fa-clipboard"></span>
+     
+    Clipboard
+  </a>
+</li>
+<li>
+  <a href="https://garthtarr.github.io/meatR/resources.html">
+    <span class="fa fa-files-o"></span>
+     
+    Resources
+  </a>
+</li>
+<li>
+  <a href="https://garthtarr.github.io/meatR/tips.html">
+    <span class="fa fa-star"></span>
+     
+    Tips
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Exercises for dplyr</h1>
+
+</div>
+
+
+<p>The following exercises highlight the most basic <strong>dplyr</strong> tasks including slicing and filtering on the <code>mtcars</code> data set. For more information about the <code>mtcars</code> data set type</p>
+<pre class="r"><code class="hljs"><span class="hljs-keyword">library</span>(tidyverse)
+?mtcars</code></pre>
+<div id="exercises" class="section level2">
+<div name="exercises" data-unique="exercises"></div><h2>Exercises</h2>
+<p>Use <code>glimpse()</code> to see a quick overview of the data.</p>
+<div id="exercise-1" class="section level3">
+<div name="exercise_1" data-unique="exercise_1"></div><h3>Exercise 1</h3>
+<p>Print out the <code>hp</code> column using the <code>select()</code> function. Try using the <code>pull()</code> function instead of select to see what the difference is.</p>
+</div>
+<div id="exercise-2" class="section level3">
+<div name="exercise_2" data-unique="exercise_2"></div><h3>Exercise 2</h3>
+<p>Print out all but the <code>hp</code> column using the <code>select()</code> function.</p>
+</div>
+<div id="exercise-3" class="section level3">
+<div name="exercise_3" data-unique="exercise_3"></div><h3>Exercise 3</h3>
+<p>Print out the <code>mpg</code>, <code>hp</code>, <code>vs</code>, <code>am</code>, <code>gear</code> columns. Consider using the colon <code>:</code> symbol to simplfy selection of consecutive columns.</p>
+</div>
+<div id="exercise-4" class="section level3">
+<div name="exercise_4" data-unique="exercise_4"></div><h3>Exercise 4</h3>
+<p>Create the object <code>mycars</code> containing the columns <code>mpg</code>, <code>hp</code> columns but let the column names be <code>miles_per_gallon</code>, and <code>horse_power</code> respectively and bring the row names into the data frame using <code>tibble::rownames_to_column()</code>.</p>
+</div>
+<div id="exercise-5" class="section level3">
+<div name="exercise_5" data-unique="exercise_5"></div><h3>Exercise 5</h3>
+<p>Create a new variable in the <code>mycars</code> data frame <code>km_per_litre</code> using the <code>mutate()</code> function. Hint: 1 mpg is 0.425 km/l.</p>
+</div>
+<div id="exercise-6" class="section level3">
+<div name="exercise_6" data-unique="exercise_6"></div><h3>Exercise 6</h3>
+<p>Randomly select and print half the observations of <code>mycars</code>. Hint: consider using the <code>sample_frac()</code> function</p>
+</div>
+<div id="exercise-7" class="section level3">
+<div name="exercise_7" data-unique="exercise_7"></div><h3>Exercise 7</h3>
+<p>Create a <code>mycars_s</code> object, containing from 10th to 35th row of <code>mycars</code>. Hint: consider using the <code>slice()</code> function.</p>
+</div>
+<div id="exercise-8" class="section level3">
+<div name="exercise_8" data-unique="exercise_8"></div><h3>Exercise 8</h3>
+<p>Print out the <code>mycars_s</code> object without any duplicates. Hint: Consider using the <code>distinct()</code> function.</p>
+</div>
+<div id="exercise-9" class="section level3">
+<div name="exercise_9" data-unique="exercise_9"></div><h3>Exercise 9</h3>
+<p>Print out from <code>mycars_s</code> object all the observations which have <code>mpg&gt;20</code> and <code>hp&gt;100</code>.</p>
+</div>
+<div id="exercise-10" class="section level3">
+<div name="exercise_10" data-unique="exercise_10"></div><h3>Exercise 10</h3>
+<p>Print out the row corresponding to the <code>Lotus Europa</code> car.</p>
+</div>
+</div>
+<div id="solutions" class="section level2">
+<div name="solutions" data-unique="solutions"></div><h2>Solutions</h2>
+<div id="exercise-1-1" class="section level3">
+<div name="exercise_113" data-unique="exercise_113"></div><h3>Exercise 1</h3>
+<pre class="r"><code class="hljs">mtcars %&gt;% select(hp)</code></pre>
+<pre><code class="hljs">##                      hp
+## Mazda RX4           110
+## Mazda RX4 Wag       110
+## Datsun 710           93
+## Hornet 4 Drive      110
+## Hornet Sportabout   175
+## Valiant             105
+## Duster 360          245
+## Merc 240D            62
+## Merc 230             95
+## Merc 280            123
+## Merc 280C           123
+## Merc 450SE          180
+## Merc 450SL          180
+## Merc 450SLC         180
+## Cadillac Fleetwood  205
+## Lincoln Continental 215
+## Chrysler Imperial   230
+## Fiat 128             66
+## Honda Civic          52
+## Toyota Corolla       65
+## Toyota Corona        97
+## Dodge Challenger    150
+## AMC Javelin         150
+## Camaro Z28          245
+## Pontiac Firebird    175
+## Fiat X1-9            66
+## Porsche 914-2        91
+## Lotus Europa        113
+## Ford Pantera L      264
+## Ferrari Dino        175
+## Maserati Bora       335
+## Volvo 142E          109</code></pre>
+</div>
+<div id="exercise-2-1" class="section level3">
+<div name="exercise_214" data-unique="exercise_214"></div><h3>Exercise 2</h3>
+<pre class="r"><code class="hljs">mtcars %&gt;% select(-hp)</code></pre>
+<pre><code class="hljs">##                      mpg cyl  disp drat    wt  qsec vs am gear carb
+## Mazda RX4           21.0   6 160.0 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag       21.0   6 160.0 3.90 2.875 17.02  0  1    4    4
+## Datsun 710          22.8   4 108.0 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive      21.4   6 258.0 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout   18.7   8 360.0 3.15 3.440 17.02  0  0    3    2
+## Valiant             18.1   6 225.0 2.76 3.460 20.22  1  0    3    1
+## Duster 360          14.3   8 360.0 3.21 3.570 15.84  0  0    3    4
+## Merc 240D           24.4   4 146.7 3.69 3.190 20.00  1  0    4    2
+## Merc 230            22.8   4 140.8 3.92 3.150 22.90  1  0    4    2
+## Merc 280            19.2   6 167.6 3.92 3.440 18.30  1  0    4    4
+## Merc 280C           17.8   6 167.6 3.92 3.440 18.90  1  0    4    4
+## Merc 450SE          16.4   8 275.8 3.07 4.070 17.40  0  0    3    3
+## Merc 450SL          17.3   8 275.8 3.07 3.730 17.60  0  0    3    3
+## Merc 450SLC         15.2   8 275.8 3.07 3.780 18.00  0  0    3    3
+## Cadillac Fleetwood  10.4   8 472.0 2.93 5.250 17.98  0  0    3    4
+## Lincoln Continental 10.4   8 460.0 3.00 5.424 17.82  0  0    3    4
+## Chrysler Imperial   14.7   8 440.0 3.23 5.345 17.42  0  0    3    4
+## Fiat 128            32.4   4  78.7 4.08 2.200 19.47  1  1    4    1
+## Honda Civic         30.4   4  75.7 4.93 1.615 18.52  1  1    4    2
+## Toyota Corolla      33.9   4  71.1 4.22 1.835 19.90  1  1    4    1
+## Toyota Corona       21.5   4 120.1 3.70 2.465 20.01  1  0    3    1
+## Dodge Challenger    15.5   8 318.0 2.76 3.520 16.87  0  0    3    2
+## AMC Javelin         15.2   8 304.0 3.15 3.435 17.30  0  0    3    2
+## Camaro Z28          13.3   8 350.0 3.73 3.840 15.41  0  0    3    4
+## Pontiac Firebird    19.2   8 400.0 3.08 3.845 17.05  0  0    3    2
+## Fiat X1-9           27.3   4  79.0 4.08 1.935 18.90  1  1    4    1
+## Porsche 914-2       26.0   4 120.3 4.43 2.140 16.70  0  1    5    2
+## Lotus Europa        30.4   4  95.1 3.77 1.513 16.90  1  1    5    2
+## Ford Pantera L      15.8   8 351.0 4.22 3.170 14.50  0  1    5    4
+## Ferrari Dino        19.7   6 145.0 3.62 2.770 15.50  0  1    5    6
+## Maserati Bora       15.0   8 301.0 3.54 3.570 14.60  0  1    5    8
+## Volvo 142E          21.4   4 121.0 4.11 2.780 18.60  1  1    4    2</code></pre>
+</div>
+<div id="exercise-3-1" class="section level3">
+<div name="exercise_315" data-unique="exercise_315"></div><h3>Exercise 3</h3>
+<pre class="r"><code class="hljs">mtcars %&gt;% select(mpg, hp, vs:gear)</code></pre>
+<pre><code class="hljs">##                      mpg  hp vs am gear
+## Mazda RX4           21.0 110  0  1    4
+## Mazda RX4 Wag       21.0 110  0  1    4
+## Datsun 710          22.8  93  1  1    4
+## Hornet 4 Drive      21.4 110  1  0    3
+## Hornet Sportabout   18.7 175  0  0    3
+## Valiant             18.1 105  1  0    3
+## Duster 360          14.3 245  0  0    3
+## Merc 240D           24.4  62  1  0    4
+## Merc 230            22.8  95  1  0    4
+## Merc 280            19.2 123  1  0    4
+## Merc 280C           17.8 123  1  0    4
+## Merc 450SE          16.4 180  0  0    3
+## Merc 450SL          17.3 180  0  0    3
+## Merc 450SLC         15.2 180  0  0    3
+## Cadillac Fleetwood  10.4 205  0  0    3
+## Lincoln Continental 10.4 215  0  0    3
+## Chrysler Imperial   14.7 230  0  0    3
+## Fiat 128            32.4  66  1  1    4
+## Honda Civic         30.4  52  1  1    4
+## Toyota Corolla      33.9  65  1  1    4
+## Toyota Corona       21.5  97  1  0    3
+## Dodge Challenger    15.5 150  0  0    3
+## AMC Javelin         15.2 150  0  0    3
+## Camaro Z28          13.3 245  0  0    3
+## Pontiac Firebird    19.2 175  0  0    3
+## Fiat X1-9           27.3  66  1  1    4
+## Porsche 914-2       26.0  91  0  1    5
+## Lotus Europa        30.4 113  1  1    5
+## Ford Pantera L      15.8 264  0  1    5
+## Ferrari Dino        19.7 175  0  1    5
+## Maserati Bora       15.0 335  0  1    5
+## Volvo 142E          21.4 109  1  1    4</code></pre>
+</div>
+<div id="exercise-4-1" class="section level3">
+<div name="exercise_416" data-unique="exercise_416"></div><h3>Exercise 4</h3>
+<pre class="r"><code class="hljs">mycars = mtcars %&gt;% 
+  select(miles_per_gallon = mpg, horse_power = hp) %&gt;% 
+  tibble::rownames_to_column(var = <span class="hljs-string">"model"</span>)</code></pre>
+</div>
+<div id="exercise-5-1" class="section level3">
+<div name="exercise_517" data-unique="exercise_517"></div><h3>Exercise 5</h3>
+<pre class="r"><code class="hljs">mycars = mycars %&gt;% 
+  mutate(
+    km_per_litre = <span class="hljs-number">0.425</span>*miles_per_gallon
+  )</code></pre>
+</div>
+<div id="exercise-6-1" class="section level3">
+<div name="exercise_618" data-unique="exercise_618"></div><h3>Exercise 6</h3>
+<pre class="r"><code class="hljs">mycars %&gt;% sample_frac(size = <span class="hljs-number">0.5</span>, replace = <span class="hljs-literal">FALSE</span>)</code></pre>
+<pre><code class="hljs">##                model miles_per_gallon horse_power km_per_litre
+## 1         Duster 360             14.3         245       6.0775
+## 2   Pontiac Firebird             19.2         175       8.1600
+## 3      Mazda RX4 Wag             21.0         110       8.9250
+## 4  Hornet Sportabout             18.7         175       7.9475
+## 5  Chrysler Imperial             14.7         230       6.2475
+## 6         Camaro Z28             13.3         245       5.6525
+## 7           Fiat 128             32.4          66      13.7700
+## 8     Ford Pantera L             15.8         264       6.7150
+## 9           Merc 280             19.2         123       8.1600
+## 10    Toyota Corolla             33.9          65      14.4075
+## 11        Datsun 710             22.8          93       9.6900
+## 12         Merc 280C             17.8         123       7.5650
+## 13       AMC Javelin             15.2         150       6.4600
+## 14     Toyota Corona             21.5          97       9.1375
+## 15  Dodge Challenger             15.5         150       6.5875
+## 16         Merc 240D             24.4          62      10.3700</code></pre>
+</div>
+<div id="exercise-7-1" class="section level3">
+<div name="exercise_719" data-unique="exercise_719"></div><h3>Exercise 7</h3>
+<pre class="r"><code class="hljs">mycars_s = mycars %&gt;% slice(<span class="hljs-number">10</span>:<span class="hljs-number">35</span>)</code></pre>
+</div>
+<div id="exercise-8-1" class="section level3">
+<div name="exercise_820" data-unique="exercise_820"></div><h3>Exercise 8</h3>
+<pre class="r"><code class="hljs">mycars_s %&gt;% distinct()</code></pre>
+<pre><code class="hljs">##                  model miles_per_gallon horse_power km_per_litre
+## 1             Merc 280             19.2         123       8.1600
+## 2            Merc 280C             17.8         123       7.5650
+## 3           Merc 450SE             16.4         180       6.9700
+## 4           Merc 450SL             17.3         180       7.3525
+## 5          Merc 450SLC             15.2         180       6.4600
+## 6   Cadillac Fleetwood             10.4         205       4.4200
+## 7  Lincoln Continental             10.4         215       4.4200
+## 8    Chrysler Imperial             14.7         230       6.2475
+## 9             Fiat 128             32.4          66      13.7700
+## 10         Honda Civic             30.4          52      12.9200
+## 11      Toyota Corolla             33.9          65      14.4075
+## 12       Toyota Corona             21.5          97       9.1375
+## 13    Dodge Challenger             15.5         150       6.5875
+## 14         AMC Javelin             15.2         150       6.4600
+## 15          Camaro Z28             13.3         245       5.6525
+## 16    Pontiac Firebird             19.2         175       8.1600
+## 17           Fiat X1-9             27.3          66      11.6025
+## 18       Porsche 914-2             26.0          91      11.0500
+## 19        Lotus Europa             30.4         113      12.9200
+## 20      Ford Pantera L             15.8         264       6.7150
+## 21        Ferrari Dino             19.7         175       8.3725
+## 22       Maserati Bora             15.0         335       6.3750
+## 23          Volvo 142E             21.4         109       9.0950</code></pre>
+</div>
+<div id="exercise-9-1" class="section level3">
+<div name="exercise_921" data-unique="exercise_921"></div><h3>Exercise 9</h3>
+<pre class="r"><code class="hljs">mycars_s %&gt;% filter(miles_per_gallon &gt; <span class="hljs-number">20</span>, 
+                      horse_power &gt; <span class="hljs-number">100</span>)</code></pre>
+<pre><code class="hljs">##          model miles_per_gallon horse_power km_per_litre
+## 1 Lotus Europa             30.4         113       12.920
+## 2   Volvo 142E             21.4         109        9.095</code></pre>
+</div>
+<div id="exercise-10-1" class="section level3">
+<div name="exercise_1022" data-unique="exercise_1022"></div><h3>Exercise 10</h3>
+<p>The car names are in the row names of the <code>mtcars</code>data object, we can access the row names using the <code>rownames()</code> functions,</p>
+<pre class="r"><code class="hljs">mycars %&gt;% filter(model == <span class="hljs-string">"Lotus Europa"</span>)</code></pre>
+<pre><code class="hljs">##          model miles_per_gallon horse_power km_per_litre
+## 1 Lotus Europa             30.4         113        12.92</code></pre>
+<p>or more generally</p>
+<pre class="r"><code class="hljs">mycars %&gt;% filter(model %<span class="hljs-keyword">in</span>% <span class="hljs-string">"Lotus Europa"</span>)</code></pre>
+<pre><code class="hljs">##          model miles_per_gallon horse_power km_per_litre
+## 1 Lotus Europa             30.4         113        12.92</code></pre>
+<!-- We could also add the row names as a column in the data frame: -->
+<!-- ```{r} -->
+<!-- mycars = mtcars %>% mutate( -->
+<!--   model = rownames(.) -->
+<!-- ) -->
+<!-- mycars %>% filter( -->
+<!--   model == "Lotus Europa" -->
+<!-- ) -->
+<!-- ``` -->
+<!-- Alternatively, if you have the `tibble` package, there is a function called `rownames_to_column` -->
+<!-- ```{r} -->
+<!-- mycars_final = tibble::rownames_to_column(df = mtcars, -->
+<!--                                   var = "model") -->
+<!-- head(mycars_final) -->
+<!-- ``` -->
+<p>Acknowledgements: these exercises adapted from <a href="http://www.r-exercises.com/2017/07/05/data-wrangling-transforming-13/">r-exercises.com</a>.</p>
+</div>
+</div>
+
+<p style="text-align:right"> <a href="https://twitter.com/garthtarr"><i class="fa fa-twitter"></i> @garthtarr </a> </p>
+
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 265.8px;"></div></div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+
+
+</body></html>
