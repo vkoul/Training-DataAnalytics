@@ -1,5 +1,5 @@
 # JCP R Resources - [Beta Version]
-Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI
+Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
 
 ## R Foundation Resources :bulb:
 ****
@@ -44,7 +44,9 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 ### Tutorials :ledger:
 <details>
   <summary>Click to expand!</summary>
- 
+
+1. **[R Primeers](https://rstudio.cloud/learn/primers)** : Learn data science basics with the interactive tutorials designed by RStudio.
+
 1. **[R Programming](https://swcarpentry.github.io/r-novice-inflammation/)**
 
 2. **[R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder/)** : An introduction to R for non-programmers using gapminder data
@@ -52,6 +54,8 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 3. **[Data Analysis and Visualization in R](https://datacarpentry.org/R-ecology-lesson/index.html)**
 
 4. **[Data Wrangling with R](https://cengel.github.io/R-data-wrangling/)**
+
+5. **[R Studio Cheatsheets](https://rstudio.com/resources/cheatsheets/)** 
 
 
 </details>
@@ -81,6 +85,9 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 
   * Some of these assignments would expect you to know more than what was covered in class, so make extensive use of Google. This is a proper Masters level course taught at MIT in their Business Analytics program, so expect it to be challenging but you will definitely learn a lot if you are able to finish the assignments. 
 
+2. **[In-house test](http://rpubs.com/cbatra/500620)**: This is a pre-requiste to attend the R-Intermediate class. Mail me for the datasets to be used. 
+
+3. **[Revision Quiz](http://rpubs.com/koulvi/revisionquiz)**: Based on Part 1 of R Foundations 
 
 </details>
 
