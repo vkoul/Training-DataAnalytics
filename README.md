@@ -24,6 +24,9 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 
 5. **[R Bootcamp](https://www.datacamp.com/courses/rbootcamp)**: This is a short course covering the basics of [`ggplot`](https://ggplot2.tidyverse.org/), [`dplyr`](https://dplyr.tidyverse.org/), [`tidyr`](https://tidyr.tidyverse.org/) and `broom`.
 
+6. **[Effective Data Storytelling using the tidyverse](https://www.datacamp.com/courses/3085)**: This course is designed to supplement and build on the content covered at http://moderndive.com and the slides at http://bit.ly/soc301-slides. It assumes that you have completed the Introduction to R course on DataCamp.
+
+
 </details>
 
 ****
