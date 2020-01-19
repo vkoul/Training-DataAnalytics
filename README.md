@@ -27,7 +27,7 @@ Navy
 
 ### [R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)
 
-### <span style="color: #000080"> Courses </span> :computer:
+### <span style="color: #8B4513"> Courses </span> :computer:
 
 <details>
   <summary>Click to expand!</summary>
