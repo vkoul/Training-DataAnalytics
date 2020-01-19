@@ -1,7 +1,9 @@
-# JCP R Resources - [Beta Version]
+# <span style="color: red;"> JCP R Resources - [Beta Version]</span>.
+# <span style="color: firebrick;"> JCP R Resources - [Beta Version]</span>.
+
 Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
 
-* <span style="color: red;">text</span>.
+* text
 * Some Markdown text with <span style="color:blue">some *blue* text</span>.
 * Some Markdown text with <span style="color:firebrick">some *blue* text</span>.
 
