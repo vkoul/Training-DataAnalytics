@@ -49,7 +49,7 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 <details>
   <summary>Click to expand!</summary>
 
-1. **[R Primeers](https://rstudio.cloud/learn/primers)** : Learn data science basics with the interactive tutorials designed by RStudio.
+1. **[R Primers](https://rstudio.cloud/learn/primers)** : Learn data science basics with the interactive tutorials designed by RStudio.
 
 1. **[R Programming](https://swcarpentry.github.io/r-novice-inflammation/)**
 
