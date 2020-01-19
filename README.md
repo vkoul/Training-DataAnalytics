@@ -15,6 +15,10 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 #### fff
 * <span style="color: #ff6347">**Hello World** </span>
 * <span style="color: #254061">**Hello World** </span>
+* <span style="color: #254061">**Hello World**</span>
+* <span style="color: #254061">Hello World</span>
+* <span style="color: #ff6347">**Hello World**</span>
+* <span style="color: #ff6347">Hello World</span>
 
 
 ## R Foundation Resources :bulb:
