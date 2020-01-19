@@ -1,11 +1,13 @@
-# <span style="color: red;"> JCP R Resources - [Beta Version]</span>.
-# <span style="color: firebrick;"> JCP R Resources - [Beta Version]</span>.
+# <span style="color: firebrick;"> JCP R Resources - [Beta Version]</span>
 
 Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
 
-* text
-* Some Markdown text with <span style="color:blue">some *blue* text</span>.
-* Some Markdown text with <span style="color:firebrick">some *blue* text</span>.
+* <font style="color: rgb(192,0,0)"> **This is my font** </font>
+* <font style="color: rgb(127,127,127)"> **This is my font** </font>
+* <font style="color: rgb(64,64,64)"> **This is my font** </font>
+* <font style="color: rgb(222,132,0)"> **This is my font** </font>
+* <font style="color: rgb(37,64,97)"> **This is my font** </font>
+
 
 ## R Foundation Resources :bulb:
 ****
