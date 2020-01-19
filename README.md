@@ -2,27 +2,7 @@
 
 Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
 
-* <font style="color: rgb(192,0,0)"> **This is my font** </font>
-* <font style="color: rgb(127,127,127)"> **This is my font** </font>
-* <font style="color: rgb(64,64,64)"> **This is my font** </font>
-* <font style="color: rgb(222,132,0)"> **This is my font** </font>
-* <font style="color: rgb(37,64,97)"> **This is my font** </font>
-#### span
-* <span style="color:rgb(192,0,0)"> **This is my font** </span>
-* <span style="color:rgb(222,132,0)">**This is my font** </span>
-* <span style="color:#ff6347"> **This is my font** </span>
-* <span style="color: rgb(37,64,97)"> **Hello World** </span>
-#### fff
-* <span style="color: #ff6347">**Hello World** </span>
-* <span style="color: #254061">**Hello World** </span>
-* <span style="color: #254061">**Hello World**</span>
-* <span style="color: #254061">Hello World</span>
-* <span style="color: #ff6347">**Hello World**</span>
-* <span style="color: #ff6347">Hello World</span>
-* <span style="color: #ff6347"> Hello World </span>
-
-Navy
-## <span style="color: firebrick;"> R Foundation Resources :bulb:</span>
+## <span style="color: firebrick;"> R Foundation Resources </span> :bulb:
 ****
 
 ### [R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)
@@ -32,7 +12,7 @@ Navy
 <details>
   <summary>Click to expand!</summary>
 
-1. **[Introduction to R by Datacamp](https://www.datacamp.com/courses/free-introduction-to-r)**: Good intro course
+1. **[Introduction to R by Datacamp](https://www.datacamp.com/courses/free-introduction-to-r)**: Good intro course. Although its paid now.
 
 2. **[Data Science: R Basics](https://www.edx.org/course/r-basics-2)**: This is by Harvard and is a part of the 9 courses in **[Data Science Certificate](https://www.edx.org/professional-certificate/harvardx-data-science)**. If you are interested in learning ML and Stats these are great courses. 
 
@@ -51,7 +31,7 @@ Navy
 </details>
 
 ****
-### Books :books:
+### <span style="color: #8B4513"> Books </span> :books:
 
 <details>
   <summary>Click to expand!</summary>
@@ -65,7 +45,7 @@ Navy
 </details>
 
 ****
-### Tutorials :ledger:
+### <span style="color: #8B4513"> Tutorials </span>:ledger:
 <details>
   <summary>Click to expand!</summary>
 
@@ -86,7 +66,7 @@ Navy
 
 ***
     
-### Videos :tv:
+### <span style="color: #8B4513"> Videos </span>:tv:
 
 <details>
   <summary>Click to expand!</summary>
@@ -100,7 +80,7 @@ Navy
 </details>
 
 ****
-### Assignments :pencil:
+### <span style="color: #8B4513"> Assignments </span> :pencil:
 
 <details>
   <summary>Click to expand!</summary>
