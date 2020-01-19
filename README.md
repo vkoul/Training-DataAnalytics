@@ -10,8 +10,8 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 #### span
 * <span style="color:rgb(192,0,0)"> **This is my font** </span>
 * <span style="color:rgb(222,132,0)">**This is my font** </span>
-* <span style="color:#ff6347">**This is my font** </span>
-* <span style="color: rgb(37,64,97)"> **Hello World**</span>
+* <span style="color:#ff6347"> **This is my font** </span>
+* <span style="color: rgb(37,64,97)"> **Hello World** </span>
 #### fff
 * <span style="color: #ff6347">Hello World</span>
 
