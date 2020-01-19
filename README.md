@@ -22,7 +22,7 @@ Resources to learn more about `R`. This would supplement <ins>**R Foundation**</
 * <span style="color: #ff6347"> Hello World </span>
 
 
-## R Foundation Resources :bulb:
+## <span style="color: firebrick;"> R Foundation Resources :bulb:
 ****
 
 ### [R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)
