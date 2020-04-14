@@ -1,3 +1,15 @@
+| Foundational  	| Intermediate 	| Advanced  	|
+|--------------------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------	|
+| **Understand the ecosystem of R** <br/>- R, R Studio, CRAN, Packages, packages installation and usage 	| **Database Connections** <br/>- connect with databases, hive, redshift <br/>- data manipulation in database using r/dplyr 	| **R Ecosystem** <br/>- environment, evaluation <br/> - S3 and S4 and R5 class system 	|
+| **Understanding of Data Types** <br/> - numeric, character, factor, logical <br/>- characteristics of each data type <br/>- conversion of data type 	| **Functions, Control Flow** <br/> - defining basic functions <br/>-  if, while, for loops 	| **Code Speed and debugging** <br/>- code vectorization <br/> - parallel processing  <br/> - code debugging 	|
+| **Understanding of Data Structures** <br/> - vector, matrix, list, data frame, tibble, data.table <br/> - properties of each data structure  | **Process Automation** <br/>- scripts to automate data cleaning, manipulation 	| **Shiny** <br/> - Dashboard and interactive reports 	|
+| **Packages overview** <br/>- Base, <br/> - Tidyverse <br/> - data.table 	| **Basic Graphical EDA** <br/>- line plots, barplots, histogram, scatter plot (base and ggplot) 	| **Custom Package Creation** <br/>- packaging commonly used functions 	|
+| **Data Import / Export functions** <br/>- read.csv vs read_csv <br/>- write.csv vs write_csv <br/>- write_xls and write_xlsx 	| **Intermediate Graphical EDA (ggplot)** <br/> - faceting, customization- interactive charts (plotly) 	| **Basic Model building** <br/>- creating linear, logistic and basic ML models <br/>- tidymodels 	|
+| **Data manipulation using dplyr** <br/>- five verbs of dplyr along with group by  <br/>- select, mutate, arrange, filter, summarize + groupby 	| **R Markdown** <br/> - documentation, reports, slides 	| **Automated Periodic Reports** <br/> - Using markdown 	|
+| **Data Cleaning, Pre-processing** <br/> - transpose, missing values, outliers, string manipulation, date time manipulation 	| **Intermediate String manipulation** <br/>- regex, text cleaning <br/>- categorical feature handling 	|  	|
+
+------------
+
 # <span style="color: firebrick;"> JCP R Resources - [Beta Version]</span>
 
 Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
