@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.4/dist/view.min.js"></script>
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script>markmap.markmap('svg#mindmap', {"t":"heading","d":1,"v":[{"t":"text","v":"R Skills","p":{"style":{}}}],"c":[{"t":"list_item","d":2,"v":[{"t":"text","v":"Foundational","p":{"style":{}}}],"c":[{"t":"list_item","d":3,"v":[{"t":"text","v":"Understand the ecosystem of R","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Understanding of Data Types","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Understanding of Data Structures","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Packages overview","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Data Import / Export functions","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Data manipulation using dplyr","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Data Cleaning, Pre-processing","p":{"style":{}}}]}]},{"t":"list_item","d":2,"v":[{"t":"text","v":"Intermediate","p":{"style":{}}}],"c":[{"t":"list_item","d":3,"v":[{"t":"text","v":"Database Connections","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Functions, Control Flow","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Process Automation","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Basic Graphical EDA","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Intermediate Graphical EDA (ggplot)","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"R Markdown","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Intermediate String manipulation","p":{"style":{}}}]}]},{"t":"list_item","d":2,"v":[{"t":"text","v":"Advanced","p":{"style":{}}}],"c":[{"t":"list_item","d":3,"v":[{"t":"text","v":"R Ecosystem (Advanced)","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Code Speed and debugging","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Shiny","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Custom Package Creation","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Basic Model building","p":{"style":{}}}]},{"t":"list_item","d":3,"v":[{"t":"text","v":"Automated Periodic Reports","p":{"style":{}}}]}]}]}).fit()</script>
+</body>
+</html>
