@@ -4,6 +4,9 @@
 
 Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
 
+Link Check - 
+https://vkoul.github.io/jcpR/?https://github.com/vkoul/jcpR/blob/master/R_skills_flowchart.html
+
 ## <span style="color: firebrick;"> R Foundation Resources </span> :bulb:
 ****
 
