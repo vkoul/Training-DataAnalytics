@@ -1,14 +1,41 @@
 ------------
 
-# <span style="color: firebrick;"> JCP R Resources - [Beta Version]</span>
+# <span style="color: firebrick;"> JCP R Resources </span>
 
-Resources to learn more about `R`. This would supplement <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
+Resources to learn more about `R`. This website supplements <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
 
-
-## <span style="color: firebrick;"> R Foundation Resources </span> :bulb:
 ****
 
-### [R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)
+## Pre-session check list 
+
+<details>
+  <summary>Click to expand!</summary>
+
+We would require `R` and `R Studio` for the session. Remember that `R Studio` doesn't work without `R`. You would need to download both of these softwares. 
+
+* [ ] [**R download**](https://cran.r-project.org/bin/windows/base/) 
+* [ ] [**R Studio Download**](https://rstudio.com/products/rstudio/download/#download) 
+
+* [ ] [**Read R Foundations Syllabus**](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf) 
+* [ ] [**Watch: What is R?**](https://www.youtube.com/watch?v=XcBLEVknqvY): A very good introductory video on R. 
+
+
+## Reference Books (R Foundation) 
+
+* [ ] [**Hands-On Programming with R**](https://rstudio-education.github.io/hopr/) 
+    * [ ] [**Ch-2: The very basics**](https://rstudio-education.github.io/hopr/basics.html) 
+    * [ ] [**Ch-3: Packages and Help Pages**](https://rstudio-education.github.io/hopr/packages.html) 
+    * [ ] [**Ch-5: R Objects**](https://rstudio-education.github.io/hopr/r-objects.html) 
+    * [ ] [**Ch-6: R Notation**](https://rstudio-education.github.io/hopr/r-notation.html) 
+
+* [ ] [**R for Data Science**](https://r4ds.had.co.nz/) 
+    * [ ] [**Ch-11: Data Import**](https://r4ds.had.co.nz/data-import.html) .
+    * [ ] [**Ch-5: Data Transformation**](https://r4ds.had.co.nz/transform.html)
+    * [ ] [**Ch-18: Pipes**](https://r4ds.had.co.nz/pipes.html)
+
+</details>
+
+## <span style="color: firebrick;"> R Resources </span> :bulb:
 
 ### <span style="color: #8B4513"> Courses </span> :computer:
 
