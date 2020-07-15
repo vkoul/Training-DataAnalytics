@@ -17,7 +17,6 @@ We would require `R` and `R Studio` for the session. Remember that `R Studio` do
 1.  **[R download](https://cran.r-project.org/bin/windows/base/)** 
 2.  **[R Studio Download](https://rstudio.com/products/rstudio/download/#download)** 
 3.  **Run the below R codes to install and load libraries in your R studio**
-4.  **Save the two files sent in the mail in a dedicated folder**: `sales.csv` and `store_details.xlsx`
 
 ```r
 # you would need to install only once
@@ -28,11 +27,13 @@ install.packages("readxl")
 library(tidyverse)
 library(readxl)
 ```
+4.  **Save the two files sent in the mail in a dedicated folder**: `sales.csv` and `store_details.xlsx`
+
 
 **Watch and read:** 
 
-4. **[Watch: What is R?](https://www.youtube.com/watch?v=XcBLEVknqvY)**: A very good introductory video on R
-5. **[Read R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)**
+5. **[Watch: What is R?](https://www.youtube.com/watch?v=XcBLEVknqvY)**: A very good introductory video on R
+6. **[Read R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)**
 
 
 ### <span style="color: #8B4513"> Reference Books (R Foundation) :orange_book: </span> 
