@@ -17,6 +17,7 @@ We would require `R` and `R Studio` for the session. Remember that `R Studio` do
 1.  **[R download](https://cran.r-project.org/bin/windows/base/)** 
 2.  **[R Studio Download](https://rstudio.com/products/rstudio/download/#download)** 
 3.  **Run the below R codes to install and load libraries in your R studio**
+4.  **Save the two files sent in the mail in a dedicated folder**: `sales.csv` and `store_details.xlsx`
 
 ```r
 # you would need to install only once
