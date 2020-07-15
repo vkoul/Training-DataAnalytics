@@ -28,10 +28,10 @@ library(tidyverse)
 library(readxl)
 ```
 
-**Read and Watch:** 
+**Watch and read:** 
 
-4. **[Read R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)**
-5. **[Watch: What is R?](https://www.youtube.com/watch?v=XcBLEVknqvY)**: A very good introductory video on R
+4. **[Watch: What is R?](https://www.youtube.com/watch?v=XcBLEVknqvY)**: A very good introductory video on R
+5. **[Read R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)**
 
 
 ### <span style="color: #8B4513"> Reference Books (R Foundation) :orange_book: </span> 
