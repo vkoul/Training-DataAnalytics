@@ -6,7 +6,7 @@ Resources to learn more about `R`. This website supplements <ins>**R Foundation*
 
 ****
 
-## Pre-session check list 
+###  <span style="color: blue;"> Pre-session check list </span> :ballot_box_with_check:
 
 <details>
   <summary>Click to expand!</summary>
@@ -20,7 +20,7 @@ We would require `R` and `R Studio` for the session. Remember that `R Studio` do
 * [ ] [**Watch: What is R?**](https://www.youtube.com/watch?v=XcBLEVknqvY): A very good introductory video on R. 
 
 
-## Reference Books (R Foundation) 
+### <span style="color: #8B4513"> Reference Books (R Foundation) :orange_book: </span> 
 
 * [ ] [**Hands-On Programming with R**](https://rstudio-education.github.io/hopr/) 
     * [ ] [**Ch-2: The very basics**](https://rstudio-education.github.io/hopr/basics.html) 
