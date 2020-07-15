@@ -35,6 +35,9 @@ We would require `R` and `R Studio` for the session. Remember that `R Studio` do
 
 </details>
 
+****
+
+
 ## <span style="color: firebrick;"> R Resources </span> :bulb:
 
 ### <span style="color: #8B4513"> Courses </span> :computer:
