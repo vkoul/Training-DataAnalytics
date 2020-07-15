@@ -107,7 +107,8 @@ library(readxl)
 4. **[Data Wrangling with R](https://cengel.github.io/R-data-wrangling/)**
 
 5. **[R Studio Cheatsheets](https://rstudio.com/resources/cheatsheets/)** 
-
+ 
+6. [**R download**](https://cran.r-project.org/bin/windows/base/) 
 
 </details>
 
