@@ -14,8 +14,8 @@ Resources to learn more about `R`. This website supplements <ins>**R Foundation*
 We would require `R` and `R Studio` for the session. Remember that `R Studio` doesn't work without `R`. You would need to download both of these softwares. 
 
 **Download and Install:**
-1.  [**R download**](https://cran.r-project.org/bin/windows/base/) 
-2.  [**R Studio Download**](https://rstudio.com/products/rstudio/download/#download) 
+1.  **[R download](https://cran.r-project.org/bin/windows/base/)** 
+2.  **[R Studio Download](https://rstudio.com/products/rstudio/download/#download)** 
 3.  **Run the below R codes to install and load libraries in your R studio**
 
 ```r
@@ -30,22 +30,22 @@ library(readxl)
 
 **Read and Watch:** 
 
-4. [**Read R Foundations Syllabus**](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)  
-5. [**Watch: What is R?**](https://www.youtube.com/watch?v=XcBLEVknqvY): A very good introductory video on R. 
+4. **[Read R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)**
+5. **[Watch: What is R?](https://www.youtube.com/watch?v=XcBLEVknqvY)**: A very good introductory video on R
 
 
 ### <span style="color: #8B4513"> Reference Books (R Foundation) :orange_book: </span> 
 
-* [ ] [**Hands-On Programming with R**](https://rstudio-education.github.io/hopr/) 
-    * [ ] [**Ch-2: The very basics**](https://rstudio-education.github.io/hopr/basics.html) 
-    * [ ] [**Ch-3: Packages and Help Pages**](https://rstudio-education.github.io/hopr/packages.html) 
-    * [ ] [**Ch-5: R Objects**](https://rstudio-education.github.io/hopr/r-objects.html) 
-    * [ ] [**Ch-6: R Notation**](https://rstudio-education.github.io/hopr/r-notation.html) 
+* [ ] **[Hands-On Programming with R](https://rstudio-education.github.io/hopr/)**
+    * [ ] **[Ch-2: The very basics](https://rstudio-education.github.io/hopr/basics.html)**
+    * [ ] **[Ch-3: Packages and Help Pages](https://rstudio-education.github.io/hopr/packages.html)** 
+    * [ ] **[Ch-5: R Objects](https://rstudio-education.github.io/hopr/r-objects.html)** 
+    * [ ] **[Ch-6: R Notation](https://rstudio-education.github.io/hopr/r-notation.html)**
 
-* [ ] [**R for Data Science**](https://r4ds.had.co.nz/) 
-    * [ ] [**Ch-11: Data Import**](https://r4ds.had.co.nz/data-import.html) .
-    * [ ] [**Ch-5: Data Transformation**](https://r4ds.had.co.nz/transform.html)
-    * [ ] [**Ch-18: Pipes**](https://r4ds.had.co.nz/pipes.html)
+* [ ] **[R for Data Science](https://r4ds.had.co.nz/)**
+    * [ ] **[Ch-11: Data Import](https://r4ds.had.co.nz/data-import.html)**
+    * [ ] **[Ch-5: Data Transformation](https://r4ds.had.co.nz/transform.html)**
+    * [ ] **[Ch-18: Pipes](https://r4ds.had.co.nz/pipes.html)**
 
 </details>
 
@@ -107,8 +107,6 @@ library(readxl)
 4. **[Data Wrangling with R](https://cengel.github.io/R-data-wrangling/)**
 
 5. **[R Studio Cheatsheets](https://rstudio.com/resources/cheatsheets/)** 
- 
-6. [**R download**](https://cran.r-project.org/bin/windows/base/) 
 
 </details>
 
