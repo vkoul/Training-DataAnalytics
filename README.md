@@ -14,9 +14,9 @@ Resources to learn more about `R`. This website supplements <ins>**R Foundation*
 We would require `R` and `R Studio` for the session. Remember that `R Studio` doesn't work without `R`. You would need to download both of these softwares. 
 
 **Download and Install:**
-* [ ] [**R download**](https://cran.r-project.org/bin/windows/base/) 
-* [ ] [**R Studio Download**](https://rstudio.com/products/rstudio/download/#download) 
-* [ ] Run the below R codes to install and load libraries in your R studio
+1.  [**R download**](https://cran.r-project.org/bin/windows/base/) 
+2.  [**R Studio Download**](https://rstudio.com/products/rstudio/download/#download) 
+3.  **Run the below R codes to install and load libraries in your R studio**
 
 ```r
 # you would need to install only once
@@ -27,9 +27,11 @@ install.packages("readxl")
 library(tidyverse)
 library(readxl)
 ```
-**Read and Watch:**
-* [ ] [**Read R Foundations Syllabus**](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf) 
-* [ ] [**Watch: What is R?**](https://www.youtube.com/watch?v=XcBLEVknqvY): A very good introductory video on R. 
+
+**Read and Watch:** 
+
+4. [**Read R Foundations Syllabus**](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)  
+5. [**Watch: What is R?**](https://www.youtube.com/watch?v=XcBLEVknqvY): A very good introductory video on R. 
 
 
 ### <span style="color: #8B4513"> Reference Books (R Foundation) :orange_book: </span> 
