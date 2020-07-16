@@ -34,7 +34,7 @@ library(readxl)
 
 5. **[Watch: What is R?](https://www.youtube.com/watch?v=XcBLEVknqvY)**: A very good introductory video on R
 6. **[Read R Foundations Syllabus](https://github.com/vkoul/jcpR/blob/master/Resources/R_Foundations_Syllabus.pdf)**
-
+7. **Fill in the learner survey**
 
 <iframe width="640px" height= "480px" src= "https://forms.microsoft.com/Pages/ResponsePage.aspx?id=ucAKnBcCikakMiZJzW7Sl0Lg22CpJWpFgi-M3Ckq3_tUMjhSNlRMVEZJWE9GSTMzSFpETEI5MVRFTy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
