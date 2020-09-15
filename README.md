@@ -1,8 +1,8 @@
 ------------
 
-# <span style="color: firebrick;"> JCP R Resources </span>
+# <span style="color: firebrick;"> Data Analytics in R - Training Resources </span>
 
-Resources to learn more about `R`. This website supplements <ins>**R Foundation**</ins> and <ins>**R Intermediate**</ins> session conducted at JCPI- Bangalore. 
+Resources to learn more about Data Analytics in R. This website supplements <ins>**Data Analytics in R- Foundation**</ins> and <ins> **Data Analytics in R- Intermediate**</ins> session conducted at JCPI- Bangalore. 
 
 ****
 
